@@ -2,7 +2,11 @@ MsOfficeFileGenerator
 =====================
 
 A .NET assembly to generate Microsoft Office OpenXML files such as Excel files (.xlsx), Word files (.docx).
+
 Currently only Excel files can be generated.
+
+## License
+**[LGPL Version 3](https://github.com/Synvata/MsOfficeFileGenerator/blob/master/LICENSE)**
 
 ## Features
 - Generate MS Office files based a collection of objects
@@ -168,6 +172,3 @@ Ext	|	MIME
 
 _The above information comes from [Office 2007 File Format MIME Types for HTTP Content Streaming](http://blogs.msdn.com/b/vsofficedeveloper/archive/2008/05/08/office-2007-open-xml-mime-types.aspx), it also mentioned:_
 >  For Windows 2003 Servers running IIS 6.0, you can add the Open XML types in IIS Manager, Server Properties, MIME Types.  These new formats are included in Windows 2008 running IIS 7.0 by default.
-
-## License
-**[LGPL Version 3](https://github.com/Synvata/MsOfficeFileGenerator/blob/master/LICENSE)**
