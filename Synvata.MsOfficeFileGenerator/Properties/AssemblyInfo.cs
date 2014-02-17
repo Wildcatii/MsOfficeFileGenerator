@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Synvata.MsOfficeFileGenerator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A .NET assembly to generate Microsoft Office OpenXML files such as Excel files (.xlsx), Word files (.docx).")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Synvata")]
 [assembly: AssemblyProduct("Synvata.MsOfficeFileGenerator")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]

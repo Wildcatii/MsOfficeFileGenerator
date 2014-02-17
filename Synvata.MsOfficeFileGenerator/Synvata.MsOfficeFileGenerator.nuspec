@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Synvata/MsOfficeFileGenerator/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Synvata/MsOfficeFileGenerator</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Excel files can be generated.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>OpenXML Excel Export</tags>
+  </metadata>
+</package>
