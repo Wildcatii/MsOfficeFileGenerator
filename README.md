@@ -172,3 +172,8 @@ Ext	|	MIME
 
 _The above information comes from [Office 2007 File Format MIME Types for HTTP Content Streaming](http://blogs.msdn.com/b/vsofficedeveloper/archive/2008/05/08/office-2007-open-xml-mime-types.aspx), it also mentioned:_
 >  For Windows 2003 Servers running IIS 6.0, you can add the Open XML types in IIS Manager, Server Properties, MIME Types.  These new formats are included in Windows 2008 running IIS 7.0 by default.
+
+## Acknowledgment
+
+This [blog post](http://polymathprogrammer.com/2012/03/27/open-xml-sdk-class-structure/) helps me a lot, especially the diagram in it:
+![OpenXML Class Structure](http://polymathprogrammer.com/images/blog/201203/openxmlsdkclassstructure.png)
