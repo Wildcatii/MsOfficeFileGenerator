@@ -30,7 +30,8 @@ namespace Demo
 				Name = "F-16",
 				Price = 5500.50m,
 				AvailableDate = DateTime.Now.AddDays(-3),
-				IsOffline = true
+				IsOffline = true,
+				NullableBool = true
 			});
 			products.Add(new Product()
 			{

@@ -252,20 +252,25 @@ namespace Synvata.MsOfficeFileGenerator.Excel
 			uint rowIndex = 1;
 			string colName;
 			int colIndex;
+			object cellValue;
 			foreach (T entity in entities)
 			{
 				rowIndex++;
 				row = new Row();
 				row.RowIndex = rowIndex;
+				row.Spans = new ListValue<StringValue>() { InnerText = "1:" + excelColProperties.Count().ToString() };
 				rows.Add(row);
 				colIndex = 0;
 				foreach (ExcelColumnProperty property in excelColProperties)
 				{
 					colIndex++;
+					cellValue = property.PropertyInfo.GetValue(entity, null);
+					if (cellValue == null)
+						continue;
 					colName = GetExcelColumnName(colIndex);
 					cell = new Cell();
 					cell.CellReference = string.Format("{0}{1}", colName, rowIndex);
-					SetCellTypeAndValue(cell, property, property.PropertyInfo.GetValue(entity, null), sharedStrTbl);
+					SetCellTypeAndValue(cell, property, cellValue, sharedStrTbl);
 					row.Append(cell);
 				}
 			}
@@ -306,7 +311,7 @@ namespace Synvata.MsOfficeFileGenerator.Excel
 			{
 				return CellValues.SharedString;
 			}
-			if (propertyType == typeof(bool))
+			if (propertyType == typeof(bool) || propertyType == typeof(Nullable<bool>))
 			{
 				return CellValues.Boolean;
 			}

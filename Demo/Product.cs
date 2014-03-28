@@ -28,5 +28,8 @@ namespace Demo
 
 		[ExcelColumn("Is Offline", 6)]
 		public bool IsOffline { get; set; }
+
+		[ExcelColumn("NullableBool", 7)]
+		public bool? NullableBool { get; set; }
 	}
 }
