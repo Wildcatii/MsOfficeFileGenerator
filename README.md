@@ -116,6 +116,9 @@ class Program
 ## Notes
 - the Index property of ExcelColumnAttribute is used in sorting columns, it's not the column index. so for 3 properties of entity have 1, 2, 5, the third property won't be in the column "E" but the column "C".
 
+## Nuget Package
+`PM> Install-Package Synvata.MsOfficeFileGenerator`
+
 ## FYI
 ### Predefined number format in Excel
 _The following information comes from [ClosedXML](https://closedxml.codeplex.com/wikipage?title=NumberFormatId%20Lookup%20Table&referringTitle=Styles%20-%20NumberFormat)_
