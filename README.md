@@ -31,7 +31,7 @@ public class Product
 	public string Name { get; set; }
 
 	[ExcelColumn("Product Price", 3, NumberingFormatString = "#,##0.00")]
-	public decimal Price { get; set; }
+	public decimal? Price { get; set; }
 
 	[ExcelColumn("Product Discount", 2)]
 	public float Discount { get; set; }
@@ -75,10 +75,21 @@ class Program
 			IsOffline = true
 		});
 		products.Add(new Product()
+			{
+				Code = "P_C",
+				Discount = 0.22F,
+				Id = 3,
+				Name = "F-22",
+				Price = null,
+				AvailableDate = DateTime.Now.AddDays(-3),
+				IsOffline = true,
+				NullableBool = true
+			});
+		products.Add(new Product()
 		{
-			Code = "P_C",
+			Code = "P_D",
 			Discount = 0.35F,
-			Id = 3,
+			Id = 4,
 			Name = "F-18",
 			Price = 5800.0m,
 			AvailableDate = DateTime.Now.AddDays(-5)

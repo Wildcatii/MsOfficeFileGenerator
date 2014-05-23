@@ -18,7 +18,7 @@ namespace Demo
 		public string Name { get; set; }
 
 		[ExcelColumn("Product Price", 3, NumberingFormatString = "#,##0.00")]
-		public decimal Price { get; set; }
+		public decimal? Price { get; set; }
 
 		[ExcelColumn("Product Discount", 2)]
 		public float Discount { get; set; }

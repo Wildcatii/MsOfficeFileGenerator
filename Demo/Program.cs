@@ -36,8 +36,19 @@ namespace Demo
 			products.Add(new Product()
 			{
 				Code = "P_C",
-				Discount = 0.35F,
+				Discount = 0.22F,
 				Id = 3,
+				Name = "F-22",
+				Price = null,
+				AvailableDate = DateTime.Now.AddDays(-3),
+				IsOffline = true,
+				NullableBool = true
+			});
+			products.Add(new Product()
+			{
+				Code = "P_D",
+				Discount = 0.35F,
+				Id = 4,
 				Name = "F-18",
 				Price = 5800.0m,
 				AvailableDate = DateTime.Now.AddDays(-5)

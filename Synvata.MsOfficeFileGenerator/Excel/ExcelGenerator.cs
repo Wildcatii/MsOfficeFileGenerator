@@ -281,6 +281,10 @@ namespace Synvata.MsOfficeFileGenerator.Excel
 		private static void SetCellTypeAndValue(Cell cell, ExcelColumnProperty property, object value, SharedStringTable sharedStrTbl)
 		{
 			cell.DataType = GetCellDataType(property.PropertyInfo);
+			if (property.CellFormatIndex > 0)
+				cell.StyleIndex = (uint)property.CellFormatIndex;
+			if (value == null)
+				return;
 
 			string strCellValue;
 			int sharedStrIndex;
@@ -300,8 +304,6 @@ namespace Synvata.MsOfficeFileGenerator.Excel
 				strCellValue = value.ToString();
 
 			cell.CellValue = new CellValue(strCellValue);
-			if (property.CellFormatIndex > 0)
-				cell.StyleIndex = (uint)property.CellFormatIndex;
 		}
 
 		private static EnumValue<CellValues> GetCellDataType(PropertyInfo pi)
